@@ -9,6 +9,13 @@ body {
     font:  1.6rem Helvetica, Arial;
     margin: 0;
 }
+a {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    color: #f08040;
+}
 .grid-container {
     display: grid;
     grid-template-areas: 'header' 'main' 'footer';
@@ -16,6 +23,7 @@ body {
     grid-template-rows: 5rem 1fr 5rem;
     height: 100%;
 }
+        /* Here is Header section start */
 header {
     grid-area: header;
     background-color: #203040;
@@ -36,7 +44,50 @@ header a:hover {
 .brand a {
     font-size: 3rem;
 }
+        /* Here is Header section end .................*/
 
+        /* Here is main section start */
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.products li {
+    flex: 0 1 30rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    height: 42rem;
+    border-top: 0.2rem #e0e0e0 solid;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+.products img {
+    max-height: 26rem;
+    max-width: 22rem;
+    margin-top: 2rem;
+}
+.product-name {
+    line-height: 2.2rem;
+}
+.product-brand {
+    font-size: 1.2rem;
+    color:#808080;
+}
+.product-price {
+    font-size: 2rem;
+}
+        /* Here is main section end ....................*/
+
+
+        /* here is footer section start*/
 footer {
     background-color: #203040;
     display: flex;
@@ -44,3 +95,4 @@ footer {
     align-items: center;
     color: #ffffff;
 }
+        /* here is footer section end ...................*/
