@@ -1,5 +1,6 @@
 import data from "../data.js";
 const HomeScreen = {
+    // set dynamic data 
     render: () => {
         const { products } = data;
         return `
